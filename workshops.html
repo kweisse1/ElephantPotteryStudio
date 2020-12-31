@@ -3,8 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+      <!-- Additional CSS must be placed after Bootstrap CSS -->
+      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
+    <title>Workshops</title>
+
 </head>
+
+<!-- Card container here-->
+
+<div class="container">
+    <div class="row row-content">
+        <div class="col col-sm-6">
+          <!--image here-->
+            <h3>Beginners Workshop</h3>
+            <p>In this class you will start with the very basics.  
+                Don’t worry though you will still be able to show off your masterpieces to family and friends.  
+                You will truly get to show your creative side, by learning how to make sculptures, tea pots, vases, and more.  
+                The possibilities are endless! You will learn how to glaze your pieces and about the firing process, as well.  
+                Come have fun with us! </p>
+        </div>
+
+        <div class="col col-sm-6">
+            <!--image here-->
+              <h3>Advanced Workshop</h3>
+              <p>Here you will learn how to throw clay.  
+                  That is right, throw clay. You didn’t read that wrong.  
+                  Throwing clay is how you make things on a potter’s wheel.  We will teach you how to trim so your pieces have pretty feet.
+                  By the end of this class you will be able to make your very own tea set, dinnerware, and so much more! 
+                  You will learn how to make your very own glazes too. 
+                   Prepare to have fun and get dirty! </p>
+
+    </div>
+</div>
+<!--Form Container here-->
+<div class="container">
+    <div class="row row-content">
+        <div class="col-12">
+        <h2>Sign Up For a Workshop</h2>
+        <hr />
+        </div>
+        <!--first col here-->
+        <div class="col-md-12">
+            <form>
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <h3>Billing Address</h3>
+                        <label for="fullName" class="col-form-label"><i class="fa fa-user" aria-hidden="true"></i> Full Name</label>
+                        <input type="text" class="form-control" required name="fullName" id="fullName" placeholder="First Name"/>
+                                           
+                        <label for="phoneNum" class="col-form-label"><i class="fa fa-phone" aria-hidden="true"></i> Phone Number</label>
+                        <input type="tel" class="form-control" required min="0000000000"
+                        max="9999999999" id="phoneNum" name=phoneNum placeholder="Phone Number"/>
+                
+                        <label for="email" class="col-form-label"><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                        <input type="email" class="form-control" required id="email" name="email" placeholder="Email"/>
+
+                        <label for="address" class="col-form-label"><i class="fa fa-address-card" aria-hidden="true"></i> Billing Address</label>
+                        <input type="address" class="form-control" required id="address" name="address" placeholder="Billing Address"/>
+
+                        <label for="city" class="col-form-label"><i class="fa fa-university" aria-hidden="true"></i> City</label>
+                        <input type="city" class="form-control" required id="city" name="city" placeholder="City"/>
+                  
+                    
+                        <!--Figure out how to make these side by side -->
+                        
+                            <label for="state" class="col-form-label">State</label>
+                            <input type="text" class="form-control" required id="state" name="state" placeholder="TX"/>
+                        
+                            <label for="zip" class="col-form-label">Zip Code</label>
+                            <input type="text" class="form-control" required id="zip" name="zip" placeholder="77777"/>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>Payment Info</h3>
+                        <label for="acceptedCC" class="col-form-label">Accepted Credit Cards and Debit Card</label> 
+                            <div class="icon-container">
+                                <i class="fa fa-cc-amex fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-cc-discover fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                <!--make sure last one is for debit-->
+                            </div>
+
+
+                            <label for="nameOnCC" class="col-form-label">Name on Card</label>
+                            <input type="text" class="form-control" required name="nameOnCC" id="nameOnCC" placeholder="Name on Card"/>
+
+                            <label for="ccNum" class="col-form-label">Credit Card Number"</label>
+                            <input type="text" class="form-control" required name="ccNum" id="ccNum" placeholder="1234-1234-1234-1234"/>
+
+                            <label for="expiration" class="col-form-label">Expiration Date</label>
+                            <input type="text" class="form-control" required name="expiration" id="expiration" placeholder="01/01/2020"/>
+                            
+                            <label for="cvv" class="col-form-label">CVV</label>
+                            <input type="text" class="form-control" required name="cvv" id="cvv" placeholder="123"/>
+
+                            
+                            <label for="selectWorkshop" class="col-form-label">Select Workshop:</label>
+                            <div>
+                                <select id="selectWorkshop" name="selectWorkshop">
+                                    <option>Select a Workshop:</option>
+                                    <option value="beginngers">Beginners/Handbuilding</option>
+                                    <option value="advanced">Advanced/Wheel Based</option>
+                                </select>
+                            </div>
+                    </div>
+                </div>
+
+  
+
+                <div class="form-group row">
+                    <div class="col">
+
+                        <label for="experienceBox" class="col-form-label"><i class="fa fa-info" aria-hidden="true"></i>How much experience do you have?</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="experienceBox" id="experienceBox" row="6"></textarea> 
+                        </div>
+
+                        
+                        <div class="offset-md-2 col">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+                
+            </form>
+        </div>
+
+    </div>
+</div>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 <body>
     
 </body>
