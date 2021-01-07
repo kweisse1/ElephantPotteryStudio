@@ -1,6 +1,4 @@
-
-
- {
+{
   "name": "elephantpotterystudio",
   "version": "1.0.0",
   "description": "ElephantPottery",
@@ -8,7 +6,6 @@
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
-
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
