@@ -63,7 +63,7 @@
 
     <!--Make Payment Modal-->
     <div id="makePaymentModal" class="modal fade" role="dialog">
-        <div class="modal-dalog" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <!--modal header-->
                 <div class="modal-header">
@@ -77,88 +77,67 @@
                         <form>
                             
                             
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
+                            
+                                <div class="form-group row">
+                                    <div class="col-md-6">
                                         <h3>Billing Address</h3>
                                         <label for="fullName" class="col-form-label"><i class="fa fa-user" aria-hidden="true"></i> Full Name</label>
                                         <input type="text" class="form-control" required name="fullName" id="fullName" placeholder="Full Name"/>
-                                    </div>
-                                </div>
+                                                        
+                                        <label for="phoneNum" class="col-form-label"><i class="fa fa-phone" aria-hidden="true"></i> Phone Number</label>
+                                        <input type="tel" class="form-control" required min="0000000000"
+                                        max="9999999999" id="phoneNum" name=phoneNum placeholder="Phone Number"/>
                                 
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                            <label for="address" class="col-form-label"><i class="fa fa-address-card" aria-hidden="true"></i> Billing Address</label>
-                                            <input type="address" class="form-control" required id="address" name="address" placeholder="Billing Address"/>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
+                                        <label for="email" class="col-form-label"><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                                        <input type="email" class="form-control" required id="email" name="email" placeholder="Email"/>
+            
+                                        <label for="address" class="col-form-label"><i class="fa fa-address-card" aria-hidden="true"></i> Billing Address</label>
+                                        <input type="address" class="form-control" required id="address" name="address" placeholder="Billing Address"/>
+            
                                         <label for="city" class="col-form-label"><i class="fa fa-university" aria-hidden="true"></i> City</label>
                                         <input type="city" class="form-control" required id="city" name="city" placeholder="City"/>
-                                    </div>
-                                </div>
                                 
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label for="state" class="col-form-label">State</label>
-                                        <input type="text" class="form-control form-inline" required id="state" name="state" placeholder="TX"/>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label for="zip" class="col-form-label">Zip Code</label>
-                                        <input type="text" class="form-control form-inline" required id="zip" name="zip" placeholder="77777"/>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                            <h3>Payment Info      
-                                                <i class="fa fa-cc-amex" aria-hidden="true"></i>
-                                                <i class="fa fa-cc-visa" aria-hidden="true"></i>
-                                                <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-                                                <i class="fa fa-cc-discover" aria-hidden="true"></i>
-                                                <i class="fa fa-credit-card" aria-hidden="true"></i>
-                                            </h3>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label for="nameOnCC" class="col-form-label">Name on Card</label>
-                                        <input type="text" class="form-control" required name="nameOnCC" id="nameOnCC" placeholder="Name on Card"/>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label for="ccNum" class="col-form-label">Credit Card Number</label>
-                                        <input type="text" class="form-control" required name="ccNum" id="ccNum" placeholder="1234-1234-1234-1234"/>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label for="expiration" class="col-form-label">Expiration Date</label>
-                                        <input type="text" class="form-control" required name="expiration" id="expiration" placeholder="01/01/2020"/>
-                                    </div>
-                                </div>
+                                    
+                                        <!--Figure out how to make these side by side -->
                                         
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label for="cvv" class="col-form-label">CVV</label>
-                                        <input type="text" class="form-control" required name="cvv" id="cvv" placeholder="123"/>
+                                            <label for="state" class="col-form-label">State</label>
+                                            <input type="text" class="form-control form-inline" required id="state" name="state" placeholder="TX"/>
+                                        
+                                            <label for="zip" class="col-form-label">Zip Code</label>
+                                            <input type="text" class="form-control form-inline" required id="zip" name="zip" placeholder="77777"/>
                                     </div>
-                                </div>
+            
+                                    <div class="col-md-6">
+                                        <h3>Payment Info      
+                                            <i class="fa fa-cc-amex" aria-hidden="true"></i>
+                                            <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                                            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                                            <i class="fa fa-cc-discover" aria-hidden="true"></i>
+                                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                                        </h3>
+                                    
+                                            <label for="nameOnCC" class="col-form-label">Name on Card</label>
+                                            <input type="text" class="form-control" required name="nameOnCC" id="nameOnCC" placeholder="Name on Card"/>
+            
+                                            <label for="ccNum" class="col-form-label">Credit Card Number</label>
+                                            <input type="text" class="form-control" required name="ccNum" id="ccNum" placeholder="1234-1234-1234-1234"/>
+            
+                                            <label for="expiration" class="col-form-label">Expiration Date</label>
+                                            <input type="text" class="form-control" required name="expiration" id="expiration" placeholder="01/01/2020"/>
+                                            
+                                            <label for="cvv" class="col-form-label">CVV</label>
+                                            <input type="text" class="form-control" required name="cvv" id="cvv" placeholder="123"/>
 
-                                <div class="form-row">
-                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Submit</button>
-                                </div>
+                                    </div>
 
-                            </div>            
-                        </form>
+                                    <div class="form-row">
+                                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary btn-sm ml-1">Submit</button>
+                                    </div>
+                            </div>
+                         </form>
+                                            
+                                            
 
                     </div>
                 </div>
