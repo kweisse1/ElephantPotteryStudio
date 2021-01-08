@@ -7,3 +7,14 @@
     padding: 10px;
     
 }
+#submitRegister{
+    width: 400px;
+    
+}
+
+
+.btn-wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
