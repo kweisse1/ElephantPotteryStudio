@@ -20,5 +20,13 @@
 }
 
 .carousel {
-    width: 100%;
+    width: 640px;
+    height: 649px;
+    padding-bottom: 10;
+}
+
+#tallPic{
+    object-fit: cover;
+    width: 640px;
+    height: 649px;
 }
