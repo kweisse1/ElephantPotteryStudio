@@ -39,18 +39,93 @@
 
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav" id="elephantNavbar">
-                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="workshops.html">Workshops</a></li>
             </ul>
         </div>
-       
+        <span class="navbar-text ml-auto">
+            <a role="button" data-toggle="modal" data-target="#loginModal">
+                <i class="fa fa-sign-in"></i> Login
+            </a>
+        </span>
     </nav>
 
+    
+    <!--login modal -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="loginEmail" class="sr-only">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="loginPassword" class="sr-only">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label for="rememberMe" class="form-check-label">Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="row">
-            <p class="col-12 col-md-6 align-self-center">Welcome to Little Elephant Pottery Studio!  Here we love what we do, and we love to share what we do!  We are a community of potters with a range of expertisesand handmade goods to show you.  Whether you are looking for the perfect present, or looking to let your creative side run free by taking one of our workshops, you will be glad you came to see us. 
+        <div class="row row-content">
+            <p class="col-12 col-lg-6 align-self-center">Welcome to Little Elephant Pottery Studio!  Here we love what we do, and we love to share what we do!  We are a community of potters with a range of expertisesand handmade goods to show you.  Whether you are looking for the perfect present, or looking to let your creative side run free by taking one of our workshops, you will be glad you came to see us. 
             </p>
+            <div class="col-lg-4 mx-auto align-self-center">
+                <!-- carousel -->
+                <div class="carousel slide" id="homeCarousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
+                      </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="workshops.html"><img src="img/beginners.jpg" alt="" class="d-block w-100"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="workshops.html"><img src="img/advanced.jpg" alt="" class="d-block w-100"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="aboutus.html"><img src="img/profile-pic-leps.jpg" alt="" class="d-block w-100" id="tallPic"></a>
+                        </div>
+                    </div>
+
+                                        
+                    <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
        
         
@@ -64,7 +139,7 @@
                     <h5 class=" text-center">Links</h5>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="aboutus.html">About</a></li>
                         <li><a href="workshops.html">Workshops</a></li>
                     </ul>
                 </div>
