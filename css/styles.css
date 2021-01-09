@@ -1,13 +1,15 @@
 .navbar{
     background-color:#7c6d2dd8;
 }
+
 .jumbotron{
     margin:0;
     background-color: rgba(138, 41, 12, 0.664);
     padding: 10px;
     
 }
-#submitRegister{
+
+#submitRegister {
     width: 400px;
     
 }
@@ -21,12 +23,12 @@
 
 .carousel {
     width: 640px;
-    height: 649px;
+    height: 640px;
     padding-bottom: 10;
 }
 
-#tallPic{
+#tallPic {
     object-fit: cover;
     width: 640px;
-    height: 649px;
+    height: 640px;
 }
