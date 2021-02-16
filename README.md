@@ -1,4 +1,2 @@
 # ElephantPotteryStudio
-A pottery studio with classes
-
-Jess and Kylay sure do have a website they worked on, aren't you imporessed, give us jobs meow plz
+A pottery studio site, done in Bootstrap 4. By Jessica James (github.com/jessicjames) and Kyle Weisse (github.com/kweisse1)
